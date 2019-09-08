@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5cf3e5a-f08f-4e62-a1aa-18c742dba201" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/db/model/superhero.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ACER.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ACER.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/importer/importer.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/importer/importer.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/importer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/importer/model/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/model/superhero.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/es.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/es.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/es/es.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/es.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,12 +22,6 @@
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
   </component>
   <component name="ProjectId" id="1QY5eJ08gq0FpbnfyvFUAnDUAzp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,6 +43,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\go\src\github.com\superhero-importer\cmd\importer\importer" />
       <recent name="C:\Users\ACER\go\src\github.com\superhero-importer" />
     </key>
   </component>
