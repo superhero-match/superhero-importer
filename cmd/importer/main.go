@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/superhero-importer/cmd/importer/importer"
 
 	"github.com/superhero-importer/internal/config"
 )
@@ -12,7 +13,7 @@ func main() {
 		panic(err)
 	}
 
-	_, err = NewImporter(cfg)
+	_, err = importer.NewImporter(cfg)
 	if err != nil {
 		panic(err)
 	}
