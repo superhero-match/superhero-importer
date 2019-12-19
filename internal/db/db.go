@@ -12,6 +12,9 @@ import (
 // DB holds the database connection.
 type DB struct {
 	DB *sql.DB
+	Limit int
+	stmtGetSuperheros *sql.Stmt
+	stmtGetProfilePictures *sql.Stmt
 }
 
 // NewDB returns database.
@@ -31,7 +34,20 @@ func NewDB(cfg *config.Config) (dbs *DB, err error) {
 		return nil, err
 	}
 
+	stmtGetSuperheros, err := db.Prepare(`call get_superheros(?,?)`)
+	if err != nil {
+		return nil, err
+	}
+
+	stmtGetProfilePictures, err := db.Prepare(`call get_profile_pictures(?)`)
+	if err != nil {
+		return nil, err
+	}
+
 	return &DB{
 		DB: db,
+		Limit: cfg.DB.Limit,
+		stmtGetSuperheros: stmtGetSuperheros,
+		stmtGetProfilePictures: stmtGetProfilePictures,
 	}, nil
 }

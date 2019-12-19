@@ -1,13 +1,13 @@
 es:
-  host: '192.168.178.26'
+  host: '192.168.178.17'
   port: '9200'
-  cluster: superheromatch
-  index: superheros
-  type: superhero
+  cluster: 'superheromatch'
+  index: 'superhero'
 
 db:
   host: localhost
   port: 3306
   user: root
-  password: '*****'
+  password: 'Kolian18**'
   name: municipality
+  limit: 50
