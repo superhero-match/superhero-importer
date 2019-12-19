@@ -18,5 +18,15 @@ func main() {
 		panic(err)
 	}
 
+	//err = impr.ES.DeleteIndex()
+	//if err != nil {
+	//	panic(err)
+	//}
+	//
+	//err = impr.ES.CreateIndex()
+	//if err != nil {
+	//	panic(err)
+	//}
+
 	fmt.Println("Everything works!!!")
 }
