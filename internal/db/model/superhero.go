@@ -1,12 +1,11 @@
 package model
 
 type Superhero struct {
-	ID                    string `db:"id"`
-	Email                 string `db:"email"`
-	Name                  string `db:"name"`
-	SuperheroName         string `db:"superhero_name"`
-	MainProfilePicURL     string `db:"main_profile_pic_url"`
-	ProfilePictures       []ProfilePicture
+	ID                    string  `db:"id"`
+	Email                 string  `db:"email"`
+	Name                  string  `db:"name"`
+	SuperheroName         string  `db:"superhero_name"`
+	MainProfilePicURL     string  `db:"main_profile_pic_url"`
 	Gender                int     `db:"gender"`
 	LookingForGender      int     `db:"looking_for_gender"`
 	Age                   int     `db:"age"`
@@ -21,10 +20,4 @@ type Superhero struct {
 	City                  string  `db:"city"`
 	SuperPower            string  `db:"superpower"`
 	AccountType           string  `db:"account_type"`
-	IsDeleted             bool    `db:"is_deleted"`
-	IsBlocked             bool    `db:"is_blocked"`
-	UpdatedAt             string  `db:"updated_at"`
-	CreatedAt             string  `db:"created_at"`
-	BlockedAt             string  `db:"blocked_at"`
-	DeletedAt             string  `db:"deleted_at"`
 }

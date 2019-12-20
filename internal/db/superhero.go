@@ -6,21 +6,16 @@ import (
 
 // GetSuperheros fetches a batch of superheros.
 func (db *DB) GetSuperheros(offset int64) (superheros map[string]model.Superhero, err error) {
-	rows, err := db.stmtGetSuperheros.Query(offset, db.Limit)
+	sups := make([]model.Superhero, 0)
+
+	err = db.stmtGetSuperheros.Select(&sups, offset, db.Limit)
 	if err != nil {
 		return nil, err
 	}
 
 	superheros = make(map[string]model.Superhero)
 
-	for rows.Next() {
-		var superhero model.Superhero
-
-		err = rows.Scan(&superhero)
-		if err != nil {
-			return nil, err
-		}
-
+	for _, superhero := range sups {
 		superheros[superhero.ID] = superhero
 	}
 

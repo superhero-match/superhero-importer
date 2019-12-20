@@ -1,25 +1,24 @@
 package db
 
 import (
-	"database/sql"
 	"fmt"
 
-	"github.com/superhero-importer/internal/config"
-
 	_ "github.com/go-sql-driver/mysql" // MySQL driver.
+	"github.com/jmoiron/sqlx"
+	"github.com/superhero-importer/internal/config"
 )
 
 // DB holds the database connection.
 type DB struct {
-	DB *sql.DB
-	Limit int
-	stmtGetSuperheros *sql.Stmt
-	stmtGetProfilePictures *sql.Stmt
+	DB                     *sqlx.DB
+	Limit                  int
+	stmtGetSuperheros      *sqlx.Stmt
+	stmtGetProfilePictures *sqlx.Stmt
 }
 
 // NewDB returns database.
 func NewDB(cfg *config.Config) (dbs *DB, err error) {
-	db, err := sql.Open(
+	db, err := sqlx.Open(
 		"mysql",
 		fmt.Sprintf(
 			"%s:%s@tcp(%s:%d)/%s",
@@ -34,20 +33,20 @@ func NewDB(cfg *config.Config) (dbs *DB, err error) {
 		return nil, err
 	}
 
-	stmtGetSuperheros, err := db.Prepare(`call get_superheros(?,?)`)
+	stmtGetSuperheros, err := db.Preparex(`call get_superheros(?,?)`)
 	if err != nil {
 		return nil, err
 	}
 
-	stmtGetProfilePictures, err := db.Prepare(`call get_profile_pictures(?)`)
+	stmtGetProfilePictures, err := db.Preparex(`call get_profile_pictures(?)`)
 	if err != nil {
 		return nil, err
 	}
 
 	return &DB{
-		DB: db,
-		Limit: cfg.DB.Limit,
-		stmtGetSuperheros: stmtGetSuperheros,
+		DB:                     db,
+		Limit:                  cfg.DB.Limit,
+		stmtGetSuperheros:      stmtGetSuperheros,
 		stmtGetProfilePictures: stmtGetProfilePictures,
 	}, nil
 }

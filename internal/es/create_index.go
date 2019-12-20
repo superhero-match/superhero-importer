@@ -92,24 +92,6 @@ func (es *ES) CreateIndex() error {
 					"account_type":{
 						"type":"keyword",
 						"store": true
-					},
-					"is_deleted":{
-						"type":"boolean"
-					},
-					"deleted_at":{
-						"type":"date"
-					},
-					"is_blocked":{
-						"type":"boolean"
-					},
-					"blocked_at":{
-						"type":"date"
-					},
-					"updated_at":{
-						"type":"date"
-					},
-					"created_at":{
-						"type":"date"
 					}
 				}
 			}

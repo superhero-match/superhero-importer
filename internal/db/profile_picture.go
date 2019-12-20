@@ -5,23 +5,18 @@ import (
 )
 
 // GetProfilePictures fetches profile pictures for the Superheros ids.
-func (db *DB) GetProfilePictures(ids string) (profilePictures map[string]model.ProfilePicture, err error) {
-	rows, err := db.stmtGetProfilePictures.Query(ids)
+func (db *DB) GetProfilePictures(ids string) (profilePictures map[string][]model.ProfilePicture, err error) {
+	profilePics := make([]model.ProfilePicture, 0)
+
+	err = db.stmtGetProfilePictures.Select(&profilePics, ids)
 	if err != nil {
 		return nil, err
 	}
 
-	profilePictures = make(map[string]model.ProfilePicture)
+	profilePictures = make(map[string][]model.ProfilePicture)
 
-	for rows.Next() {
-		var profilePicture model.ProfilePicture
-
-		err = rows.Scan(&profilePicture)
-		if err != nil {
-			return nil, err
-		}
-
-		profilePictures[profilePicture.SuperheroID] = profilePicture
+	for _, profilePicture := range profilePics {
+		profilePictures[profilePicture.SuperheroID] = append(profilePictures[profilePicture.SuperheroID], profilePicture)
 	}
 
 	return profilePictures, nil

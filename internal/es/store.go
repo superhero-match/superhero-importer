@@ -3,12 +3,14 @@ package es
 import (
 	"context"
 	"fmt"
+
 	"github.com/superhero-importer/internal/es/model"
+
 	"gopkg.in/olivere/elastic.v7"
 )
 
 // StoreSuperheros saves existing superheros in Elasticsearch.
-func(es *ES) StoreSuperheros(superheros []*model.Superhero) error {
+func (es *ES) StoreSuperheros(superheros []model.Superhero) error {
 	bulk := es.Client.Bulk()
 
 	for _, superhero := range superheros {
