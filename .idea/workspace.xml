@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5cf3e5a-f08f-4e62-a1aa-18c742dba201" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/importer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/es.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/es.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/db/model/profile_picture.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/model/profile_picture.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/db/model/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/model/superhero.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/es/es.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/es.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/db/profile_picture.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/profile_picture.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/db/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/superhero.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/es/create_index.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/create_index.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/es/model/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/model/superhero.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/es/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/store.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +30,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="municipality@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="municipality@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="municipality@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="municipality: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="municipality@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="municipality: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="routines" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
