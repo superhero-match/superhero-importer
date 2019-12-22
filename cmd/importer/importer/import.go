@@ -60,6 +60,7 @@ func (i *Importer) Import() error {
 				City:        superheroDB.City,
 				SuperPower:  superheroDB.SuperPower,
 				AccountType: superheroDB.AccountType,
+				CreatedAt:   superheroDB.CreatedAt,
 			}
 		}
 
