@@ -20,4 +20,5 @@ type Superhero struct {
 	City                  string  `db:"city"`
 	SuperPower            string  `db:"superpower"`
 	AccountType           string  `db:"account_type"`
+	CreatedAt             string  `db:"created_at"`
 }
