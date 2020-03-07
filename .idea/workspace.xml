@@ -3,11 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="a5cf3e5a-f08f-4e62-a1aa-18c742dba201" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/importer/importer/import.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/importer/import.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/importer/importer/importer.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/importer/importer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/importer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/importer/model/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/model/superhero.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/es.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/es.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/db/model/profile_picture.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/model/profile_picture.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/db/model/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/model/superhero.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/db/profile_picture.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/profile_picture.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/db/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/superhero.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/es/create_index.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/create_index.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/es/delete_index.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/delete_index.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/es/es.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/es.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/es/model/profile_picture.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/model/profile_picture.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/es/model/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/model/superhero.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/es/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/store.go" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +78,11 @@
   </component>
   <component name="ProjectId" id="1QY5eJ08gq0FpbnfyvFUAnDUAzp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
@@ -70,7 +90,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,18 +105,6 @@
       <recent name="C:\Users\ACER\go\src\github.com\superhero-importer\cmd\importer\importer" />
       <recent name="C:\Users\ACER\go\src\github.com\superhero-importer" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="go build github.com/superhero-importer/cmd/importer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -113,21 +121,6 @@
         <item itemvalue="Go Build.go build github.com/superhero-importer/cmd/importer" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ae3d1519" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
