@@ -14,9 +14,9 @@
 package importer
 
 import (
-	"github.com/superhero-importer/internal/config"
-	"github.com/superhero-importer/internal/db"
-	"github.com/superhero-importer/internal/es"
+	"github.com/superhero-match/superhero-importer/internal/config"
+	"github.com/superhero-match/superhero-importer/internal/db"
+	"github.com/superhero-match/superhero-importer/internal/es"
 )
 
 // Importer holds all the data relevant.

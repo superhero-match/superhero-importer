@@ -18,7 +18,7 @@ import (
 
 	_ "github.com/go-sql-driver/mysql" // MySQL driver.
 	"github.com/jmoiron/sqlx"
-	"github.com/superhero-importer/internal/config"
+	"github.com/superhero-match/superhero-importer/internal/config"
 )
 
 // DB holds the database connection.

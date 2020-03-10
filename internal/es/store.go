@@ -17,7 +17,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/superhero-importer/internal/es/model"
+	"github.com/superhero-match/superhero-importer/internal/es/model"
 
 	"gopkg.in/olivere/elastic.v7"
 )

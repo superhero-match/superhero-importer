@@ -16,8 +16,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/superhero-importer/cmd/importer/importer"
-	"github.com/superhero-importer/internal/config"
+	"github.com/superhero-match/superhero-importer/cmd/importer/importer"
+	"github.com/superhero-match/superhero-importer/internal/config"
 )
 
 func main() {
