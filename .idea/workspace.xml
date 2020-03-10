@@ -3,25 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a5cf3e5a-f08f-4e62-a1aa-18c742dba201" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/importer/importer/import.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/importer/import.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/importer/importer/importer.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/importer/importer.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/importer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/importer/model/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/importer/model/superhero.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/es.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/es.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/db/model/profile_picture.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/model/profile_picture.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/db/model/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/model/superhero.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/db/profile_picture.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/profile_picture.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/db/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/superhero.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/es/create_index.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/create_index.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/es/delete_index.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/delete_index.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/es/es.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/es.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/es/model/profile_picture.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/model/profile_picture.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/es/model/superhero.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/model/superhero.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/es/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/es/store.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +126,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1583588192323">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583588192323" />
   </component>
   <component name="masterDetails">
     <states>

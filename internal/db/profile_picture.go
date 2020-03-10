@@ -14,7 +14,7 @@
 package db
 
 import (
-	"github.com/superhero-importer/internal/db/model"
+	"github.com/superhero-match/superhero-importer/internal/db/model"
 )
 
 // GetProfilePictures fetches profile pictures for the Superheros ids.
