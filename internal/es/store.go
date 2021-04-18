@@ -16,10 +16,9 @@ package es
 import (
 	"context"
 	"fmt"
+	elastic "github.com/olivere/elastic/v7"
 
 	"github.com/superhero-match/superhero-importer/internal/es/model"
-
-	"gopkg.in/olivere/elastic.v7"
 )
 
 // StoreSuperheros saves existing superheros in Elasticsearch.

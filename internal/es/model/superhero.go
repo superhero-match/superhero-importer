@@ -14,7 +14,7 @@
 package model
 
 import (
-	"gopkg.in/olivere/elastic.v7"
+	elastic "github.com/olivere/elastic/v7"
 )
 
 type Superhero struct {

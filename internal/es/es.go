@@ -16,8 +16,8 @@ package es
 import (
 	"fmt"
 
+	elastic "github.com/olivere/elastic/v7"
 	"github.com/superhero-match/superhero-importer/internal/config"
-	"gopkg.in/olivere/elastic.v7"
 )
 
 // ES holds all the Elasticsearch client relevant data.
@@ -39,6 +39,7 @@ func NewES(cfg *config.Config) (es *ES, err error) {
 				cfg.ES.Port,
 			),
 		),
+		elastic.SetSniff(false),
 	)
 	if err != nil {
 		return nil, err

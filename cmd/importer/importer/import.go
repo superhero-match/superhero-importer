@@ -15,8 +15,8 @@ package importer
 
 import (
 	"fmt"
+	elastic "github.com/olivere/elastic/v7"
 	"github.com/superhero-match/superhero-importer/internal/es/model"
-	"gopkg.in/olivere/elastic.v7"
 )
 
 // Import import Superheros data from DB to Elasticsearch.
@@ -29,6 +29,8 @@ func (i *Importer) Import() error {
 		if err != nil {
 			return err
 		}
+
+		fmt.Println("len(superherosDB) => ", len(superherosDB))
 
 		if len(superherosDB) == 0 {
 			break
@@ -108,9 +110,20 @@ func (i *Importer) Import() error {
 			superherosES = append(superherosES, superhero)
 		}
 
-		err = i.ES.StoreSuperheros(superherosES)
-		if err != nil {
-			return err
+		if len(superherosES) > 0 {
+			err = i.ES.StoreSuperheros(superherosES)
+			if err != nil {
+				return err
+			}
+		} else {
+			for _, superhero := range superheros {
+				superherosES = append(superherosES, superhero)
+			}
+
+			err = i.ES.StoreSuperheros(superherosES)
+			if err != nil {
+				return err
+			}
 		}
 
 		// 8. Check if the len of batch returned is less than the batch size,
