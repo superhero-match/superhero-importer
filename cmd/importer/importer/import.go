@@ -30,8 +30,6 @@ func (i *Importer) Import() error {
 			return err
 		}
 
-		fmt.Println("len(superherosDB) => ", len(superherosDB))
-
 		if len(superherosDB) == 0 {
 			break
 		}
@@ -85,6 +83,7 @@ func (i *Importer) Import() error {
 			return err
 		}
 
+		// This map holds only Superheroes that have profile pictures besides the main profile picture.
 		superherosES := make([]model.Superhero, 0)
 
 		// 7. Loop through all the DB profile pictures and map them to ES profile picture.
@@ -110,20 +109,36 @@ func (i *Importer) Import() error {
 			superherosES = append(superherosES, superhero)
 		}
 
-		if len(superherosES) > 0 {
-			err = i.ES.StoreSuperheros(superherosES)
-			if err != nil {
-				return err
-			}
-		} else {
-			for _, superhero := range superheros {
-				superherosES = append(superherosES, superhero)
-			}
+		// This map holds Superheroes that both have and don't have profile pictures besides main
+		// profile picture.
+		sprhrs := make(map[string]model.Superhero)
 
-			err = i.ES.StoreSuperheros(superherosES)
-			if err != nil {
-				return err
+		// First add all the Superheroes that have profile pictures besides main profile picture.
+		for _, superheroES := range superherosES {
+			sprhrs[superheroES.ID] = superheroES
+		}
+
+		// Next, add the rest of superheroes that don't have profile pictures besides main profile picture.
+		for _, superhero := range superheros {
+			// Check to see if this Superhero is already added. If not added then add the Superhero.
+			// If already added that means this Superhero had profile pictures and was added in the
+			// previous step.
+			_, ok := sprhrs[superhero.ID]
+			if !ok {
+				sprhrs[superhero.ID] = superhero
 			}
+		}
+
+		// This slice holds all the Superheroes, bot with and without profile pictures.
+		sprs := make([]model.Superhero, 0)
+
+		for _, superhero := range sprhrs {
+			sprs = append(sprs, superhero)
+		}
+
+		err = i.ES.StoreSuperheros(sprs)
+		if err != nil {
+			return err
 		}
 
 		// 8. Check if the len of batch returned is less than the batch size,
